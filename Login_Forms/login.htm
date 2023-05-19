@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            display: grid;
+            place-items: center;
+           
+        }
+    </style>
+</head>
+<body>
+   
+        
+            Enter Username:<input type="text" name="name" id="name"> <br> 
+            Enter Password:<input type="text" name="pass" id="pass"> <br> 
+            <button type="submit" onclick="fetch()">Login</button>
+            
+            <h1 class="main">
+
+            </h1>
+
+            <h1 class="main">
+
+            </h1>
+
+</body>
+<script>
+    function fetch()
+    {
+    let val1=document.getElementById('name').value;
+    let val2=document.getElementById('pass').value
+    document.getElementsByClassName('main')[0].innerText=val1;
+    document.getElementsByClassName('main')[1].innerText=val2;
+
+       
+    }
+</script>
+</html>
