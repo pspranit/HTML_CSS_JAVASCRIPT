@@ -1,0 +1,30 @@
+$n:1;
+
+.gallary{
+    --d: 10s;
+
+    display:grid;
+    width:220px
+}
+
+.gallary > img{
+    grid-area:  1/1;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 10px solid #f2f2f2;
+    box-shadow: 0 0 4px #0007;
+    animation: slide var(--d) infinite;
+    border-radius: 15px;
+}
+
+.gallary img:last-child{
+    animation-name: slide-last;
+}
+
+@for $i from 1 to ($n + 1){
+    .gallary > img:nth-child(#{$i}){
+        animation-delay: calc(#{(1 - $i)/$n}*var(--d));
+        --r: #{(-20 + random(40))*1deg};
+    }
+}

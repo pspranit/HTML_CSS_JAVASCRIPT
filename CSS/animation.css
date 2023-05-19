@@ -1,0 +1,50 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    transform: rotate();
+    animation: animation 10s ease-in-out 5s infinite;
+}
+
+@keyframes animation {
+    0%{
+        border-radius: 0%;
+        background-color: black;
+        transform: rotate(45deg);
+    }
+
+    20%{
+        border-radius: 10%;
+        background-color: grey;
+        transform: rotate(90deg);
+    }
+
+    40%
+    {
+        border-radius: 20%;
+        background-color: red;
+        transform: rotate(180deg);
+    }
+
+    60%
+    {
+        border-radius: 30%;
+        background-color: blue;
+        transform: rotate(240deg);
+    }
+
+    80%
+    {
+        border-radius: 40%;
+        background-color: maroon;
+        transform: rotate(580deg);
+    }
+
+    100%
+    {
+        border-radius: 50%;
+        background-color: orange;
+        transform: rotate(360%);
+    }
+    
+}

@@ -1,0 +1,35 @@
+p:first-child{
+    background-color: purple;
+}
+p:last-child{
+    color: red;
+}
+p:nth-child(even)
+{
+    color: blue;
+}
+p:first-of-type{
+    font-style: italic;
+}
+p:last-of-type{
+    color: red;
+    font-size: 40px;
+}
+h1:hover{
+text-align: center;
+color: crimson;
+}
+img:hover{
+    height: 100PX;
+    width: 200px;
+}
+
+a:visited{
+    color: purple;
+}
+a:link{
+    color: blue;
+}
+a:active{
+    color: red;
+}

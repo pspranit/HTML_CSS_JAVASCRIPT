@@ -1,0 +1,21 @@
+#p1{
+    background-color: yellow;
+}
+.pc1{
+    background-color: dodgerblue;
+}
+.pc1{
+    font-size: 18px;
+}
+#p1,pc1{
+    color:red
+}
+*{
+    padding: 2%;
+    margin:1%;
+    box-sizing: border-box;
+    background-color: black;
+}
+#p1,#p1{
+    font-size: 25px;
+}

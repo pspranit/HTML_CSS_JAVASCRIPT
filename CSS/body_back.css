@@ -1,0 +1,11 @@
+body{
+    background:linear-gradient(pink,black,red);
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+}
+body{
+    background:radial-gradient(orange,white,green);
+    background-repeat: no-repeat;
+    height: 90vh;
+}

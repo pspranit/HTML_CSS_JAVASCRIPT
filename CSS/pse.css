@@ -1,0 +1,27 @@
+p::first-line{
+    background-color: red;
+}
+
+p::first-letter{
+    color: blue;
+    font-size: 100px;
+}
+
+p::after{
+    content: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/338/palms-up-together_1f932.png");
+}
+
+p::before{
+    content: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/326/red-heart_2764-fe0f.png");
+}
+
+li::marker{
+    color: red;
+}
+
+li::marker{
+    color: crimson;
+}
+#p1{
+    color: aqua;
+}

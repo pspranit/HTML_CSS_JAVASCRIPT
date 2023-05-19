@@ -1,0 +1,12 @@
+#section{
+    width: 50vh;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+}
+
+#div2{
+    position: relative;
+    top: 10px;
+}
