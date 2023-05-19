@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATHFUNCTION</title>
+    <style>
+        .main{
+            margin-top: 300px;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1></h1>
+    <button onclick="test()">Random</button>
+    <button onclick="stop()">Stop</button>
+    </div>
+
+    <script>
+
+        function test()
+        {
+            var my=setInterval(function(){
+                var ps=Math.floor(Math.random()*10000);
+
+            document.getElementsByTagName('h1')[0].innerText=ps;
+            },1500
+            )
+           
+        }
+
+        function stop()
+        {
+            my.clearInterval();
+        }
+
+        // var p=Math.PI;
+        // document.write("PI VALUE="+p+"<br>");
+
+        // var r=Math.round(p)
+        // document.write("ROUND VALUE="+r+"<br>");
+
+        // var power=Math.pow(4,2);
+        // document.write("POWER VALUE="+power+"<br>")
+
+        // var sqrt=Math.sqrt(64);
+        // document.write("SQRT VALUE="+sqrt+"<br>")
+
+        // var abs=Math.abs(-10);
+        // document.write("ABS VALUE="+abs+"<br>")
+
+        // var ceil=Math.ceil(5.1);
+        // document.write("CEIL VALUE="+ceil+"<br>")
+
+        // var floor=Math.floor(4.0);
+        // document.write("FLOOR VALUE="+floor+"<br>")
+
+        // var min=Math.min(4,2,11);
+        // document.write("MIN VALUE="+min+"<br>")
+
+        // var max=Math.max(4,2,100);
+        // document.write("MAX VALUE="+max+"<br>")
+
+        // var random=Math.floor(Math.random()*10000);
+        // document.write("RANDOM VALUE="+random+"<br>")
+
+        // var rr=Math.round(random);
+        // document.write("ROUND RANDOM VALUE="+rr+"<br>")
+    </script>
+</body>
+</html>

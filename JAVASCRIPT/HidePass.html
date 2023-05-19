@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            display: grid;
+            place-items: center;
+           
+        }
+        div{
+        display: flex;
+
+       }
+       button{
+        margin-left: 10px;
+       }
+    </style>
+</head>
+<body>
+   
+        
+            Enter Username:<input type="text" name="name" id="name"> <br> 
+            Enter Pssword:<input type="password" name="pass" id="password"> <br> 
+            <div>
+                <button type="submit">Login</button>
+            <button type="submit" onclick="toggle(this)">Show password</button>
+            
+            </div>
+</body>
+<script>
+    var password=document.getElementById('password');
+  function toggle(ele)
+  {
+    var type=password.getAttribute('type');
+    if(type==='password')
+    {
+        password.setAttribute('type','text')
+        ele.innerText="Hide password";
+    }
+    else{
+        password.setAttribute('type','password');
+        ele.innerText="Show password";
+    }
+  }
+</script>
+</html>

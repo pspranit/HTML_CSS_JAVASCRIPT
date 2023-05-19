@@ -1,0 +1,57 @@
+*CSS
+ccs which help to give
+is current version is 3
+css was invented by HYAKON Wium Lie
+the css proccessor SASS LESS STYLUS
+
+#HOW TO LINK CSS?
+1>inline
+2>external
+3>internal
+
+#Pseudoelement Selector
+1)first-line
+2)first-letter
+3)after
+4)before
+5)marker
+
+#PROPERTIES
+1)Text property
+2)Font property
+3)Background property
+
+POSITION
+1)static
+2)Absolute
+3)relative
+4)fixed
+5)Sticky-in POSITION Sticky top zero is mandatory.this position Sticky mainly going to use NAV bar. 
+ 
+ #FLEX
+ Flex which Help to create responsive webpage.
+ *Flex property
+ 1)Display:Flex
+ 2)allign item:which hepls to move vertical direction
+ allign-item=flext-start,flex-end,center
+ 3)Justify-content:=>which helps to moveing horizontal direction.
+ Justify-content=flext-start,flex-end,center
+4)Space-arround=>Space between arround
+5)flex-wrap=>flex wrap which helps to acccumlate all the child in a parent contain
+6)column-gap=>gap between row and column.
+
+#TRANSFORM
+1)rotate
+2)Skew
+3)Scale
+4)translate
+
+#TRANSITION
+transition set a timestamp html
+
+1)Transition-Delay
+2)Transition duration
+Transition timing function:ease,ease-in,ease-in-out,ease-out
+
+/////////////////////////////////////////////////////////////////////////////
+

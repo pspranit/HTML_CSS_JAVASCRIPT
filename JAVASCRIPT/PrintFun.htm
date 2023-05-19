@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Function</title>
+  </head>
+  <body id="body">
+    <center>
+      <h1>Welcome</h1>
+      <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        quisquam provident quae voluptatibus earum labore veniam officiis,
+        sapiente molestias ab facere quo, debitis officia dicta natus alias!
+        Illum iusto consectetur amet facere totam necessitatibus tempora iure,
+        aliquam impedit dolor accusamus adipisci eaque ut ex nisi a beatae
+        placeat veritatis corrupti temporibus iste praesentium et corporis!
+        Dolores suscipit, sequi et fugiat quos dicta quae sapiente similique quo
+        labore ducimus sunt tenetur? Id est doloremque delectus possimus! Autem
+        veritatis consequuntur debitis iste tempora expedita laboriosam numquam
+        ipsum omnis beatae et veniam rerum deleniti alias, porro id ullam. Rerum
+        nemo eveniet laborum dolorem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Animi, quae alias quos, voluptate reiciendis atque
+        obcaecati aliquam accusantium qui ipsum modi illum asperiores nobis
+        libero ducimus vitae saepe sint veritatis aperiam laborum explicabo quas
+        autem. Ducimus reiciendis voluptas illo fuga ab nihil dolores quidem
+        exercitationem eum nulla nisi animi, vel accusantium. Voluptatum facilis
+        veritatis officia rem maiores sapiente eius, iusto eum hic ad, beatae
+        at, tempore reiciendis nihil voluptatem illo. Provident ut libero
+        ducimus sint, voluptas omnis nostrum illo beatae hic minima id,
+        necessitatibus enim voluptatum quibusdam exercitationem facilis
+        distinctio? Aspernatur, ab qui et excepturi dolorem reiciendis ad quis
+        veritatis!
+      </p>
+
+      <button onclick="printPage()">print</button>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis,
+        repudiandae magnam. Nesciunt nisi similique magnam error accusantium. In
+        omnis neque iusto vitae, adipisci ullam consequuntur aut magni nulla
+        quas nostrum illo voluptatem quibusdam quo molestias earum, similique
+        rem nemo. Totam quasi laborum tempore aliquam explicabo quibusdam
+        ducimus, tenetur atque eius debitis mollitia nesciunt doloremque
+        architecto animi eos non dicta quos enim hic distinctio possimus
+        voluptatem consequuntur accusantium voluptatum. Qui fugit possimus error
+        delectus sequi sint? Eos officia aspernatur repudiandae ea consectetur,
+        quasi id expedita ad libero unde porro neque cupiditate sunt perferendis
+        ipsam odit. Autem quod aperiam iste veniam mollitia porro ratione
+        dolorem saepe facere fugit placeat, tenetur quae iure! Doloremque
+        voluptas, molestiae, id amet pariatur, obcaecati cumque voluptatibus
+        assumenda officia facere a nisi voluptatem placeat consequatur fugiat.
+        Maiores, mollitia quae! Numquam placeat rem animi, excepturi veritatis
+        dicta iure unde quia itaque natus officia exercitationem? Explicabo
+        aspernatur culpa saepe soluta commodi exercitationem vel, officia sunt
+        ut ullam qui vero reprehenderit tempore deserunt quae, veniam ex,
+        voluptas quibusdam placeat. Et, corrupti facere voluptas iure voluptates
+        eligendi saepe sit illo hic enim consequuntur debitis, voluptate,
+        recusandae odio. Nulla harum tenetur molestiae eius error nobis sit
+        accusamus. Porro reprehenderit sit facilis impedit corporis.
+      </p>
+    </center>
+  </body>
+  <script>
+    function printPage() {
+
+        var body=document.getElementById('body').innerHTML;
+        var data=document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML=data;
+
+      window.print();
+
+      document.getElementById('body').innerHTML=body;
+
+
+    }
+  </script>
+</html>

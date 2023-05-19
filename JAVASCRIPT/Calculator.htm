@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    Enter First Number:<input type="number" name="first" id="first" step="any"/>
+    <select id="oper">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    Enter Second Number:<input type="number" name="second" id="second" step="any"/><br> <br>
+    <button onclick="cal()">Calculator</button>
+    <input type="text" name="" id="res" readonly=""/>
+</body>
+<script>
+
+    function cal()
+    {
+        let no1=document.getElementById('first').value;
+        let no2=document.getElementById('second').value;
+        let oper=document.getElementById('oper').value;
+        // alert(no1+"and"+no2);
+      
+        if(oper=='+')
+        {
+            var res=parseInt(no1)+parseInt(no2);
+        }
+        else if(oper=='-')
+        {
+            var res=parseInt(no1)-parseInt(no2);
+        }
+
+        else if(oper=='*')
+        {
+            var res=parseInt(no1)*parseInt(no2);
+        }
+
+        else if(oper=='/')
+        {
+            var res=parseInt(no1)/parseInt(no2);
+        }
+        document.getElementById('res').value=res;
+     } 
+        
+</script>
+</html>

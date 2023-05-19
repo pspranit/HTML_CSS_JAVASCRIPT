@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+    <button onclick="test()">Try it</button>
+    <br> <br>
+    <button onclick="test2()">Click Here</button>
+</body>
+<script>
+
+    function test()
+    {
+      setInterval(()=>{
+        alert("Hello")
+    },2500
+      
+      )
+    }
+
+    function test2()
+    {
+        setTimeout(()=>{
+            // alert("Namaste !!")
+            let ps=document.getElementsByTagName('button')[1].innerHTML="<h1>Pranit</h1>";
+           document.write(ps)
+        },2500
+        );
+    }
+</script>
+</html>

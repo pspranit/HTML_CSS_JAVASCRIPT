@@ -1,0 +1,105 @@
+                        *************JAVASCRIPT************
+
+*OBJECT
+
+object is a combination of key and value pairs.
+object which helps to create memory.
+object we can create to type
+1)literals= {}
+2)constructor function
+**********************************************************************************
+
+OPERATORS
+
+1)ARITHMETIC OPERATORS
+
++       Addition
+-       substraction
+*       multi
+**      Exponenstion(some result as Matg.pow(x,y))
+/       Division
+%       Modulus (Division Remainder)
+++      Increment
+--      Decrement
+**********************************************************************************
+2)LOGICAL OPERATORS
+
+&&      Logical AND 
+||      Logical OR 
+!       Logical NOT
+**********************************************************************************
+3)ASSIGNMENT OPERATORS
+
+OPERATORS           EXAMPLE         SAME AS 
+
+=                   X=y             x=y
++=                  x+=y            x=x+y
+-=                  x-=y            x=x-y
+*=                  x*=y            x=x*y
+/=                  x/y             x=x/y
+%=                  x%=y            x=x%y
+**=                 x**=y           x=x**y
+&&=                 x&&=y           x&&(x=y)
+||=                 x||=y           x||(x=y)
+??=                 x??=y           x??(x=y)
+***********************************************************************************
+4)STRING OPERATORS
+
++           concatenate string with strings/numbers/boolean etc
+***********************************************************************************
+
+5)COMPARISION OPERATORS
+
+==      Equal to
+===     equal value and equal type
+!=      not equal
+!==     not equal value and not equal type
+>       greater than
+<       less than
+>=      greater than equal to
+<=      less than eual to
+?:       ternary OPERATOR
+??        nullish coalesing operator
+***********************************************************************************
+
+*BOM (Browser object Model)
+    1)BOB which means browser object model it is parent form DOM.
+
+
+                                     BOM
+
+                                    WINDOW
+
+                        PROMPT         ALERT        DOM(document object model)
+
+                                                                html
+
+                                                        head               BODY
+
+                                                    META    TITLE           SECTION
+
+                                                                    IMG        H1       P1
+
+
+*DOM(document object model)
+    1)DOM is an document object model here we can find all the html element.
+    2)DOM method which means here we going to target html elements by the help of attributes and tagname.
+    3)there are five types of DOM method:
+            1)document.getElementById();
+            2)document.getElementBYClassName();
+            3)document.getElementsBYClassName();
+            4)document.querySelector();
+            5)document.querySelectorAll();
+*******************************************************************************************************************************
+
+*AJAX       
+1)the http request object to request data from a server.
+2)it's works on the oldest browser as well as new one.
+3)it was debricated in es6 but still is widely use
+
+*PROMISES
+1)promises are the usefull when you have to handle more than one asynchronus.
+2)you can perfrom operation after a promise is resolve using thid method
+    1)then()
+    2)catch()
+    3)finally()

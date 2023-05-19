@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="main" class="main2">
+
+        pranit sahane
+    </div>
+
+    <div id="main" class="main2">
+
+        hello
+    </div> -->
+    <!-- <button class="ps" onclick="click()">SUMBIT</button> -->
+
+    <input type="text" name="u_name" > 
+    <button onclick="getName()">Submit</button>
+    <h1></h1>
+</body>
+<script>
+
+    // let ps=document.getElementById("main").innerHTML="<a href='https://www.facebook.com/'> click</a>"
+    // console.log(ps);
+
+    // let ps2=document.getElementsByClassName('main2')[0].innerHTML='hello';
+
+    // document.getElementsByClassName('main2')[0].innerHTML='hello';
+    // document.getElementsByClassName('main2')[1].innerHTML='pranit sahane';
+
+    // alert(ps2);
+    function getName()
+    {
+        var name=document.getElementsByName('u_name')[0].value;
+        document.getElementsByName('u_name')[0].value="";
+        document.getElementsByTagName("h1")[0].innerHTML=name;
+    }
+
+</script>
+</html>

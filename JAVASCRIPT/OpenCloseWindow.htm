@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open close Window</title>
+</head>
+<body>
+    <button onclick="openWin()">Open</button>
+    <button onclick="closeWin()">Close</button>
+</body>
+<script>
+    var my,ps;
+    function openWin()
+    {
+        my=window.open("https://www.flipkart.com","height=300px","width=200px");
+    ps=window.open("https://www.youtube.com","height=300px","width=200px");
+
+    }
+
+    function closeWin()
+    {
+        my.close();
+        ps.close();
+    }
+</script>
+</html>

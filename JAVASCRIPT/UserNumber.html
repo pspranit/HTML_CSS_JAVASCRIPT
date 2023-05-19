@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* border-bottom: 2px solid black; */
+            border: 2px 2px 2px 2px solid black;
+            font-weight: bold;
+            font-size: larger;
+            width: 100px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2></h2>
+</body>
+<script>
+    var no=prompt("Enter Number")
+    var no1=Number.parseInt(no);
+    // document.getElementsByTagName('h2')[0].innerText=no1;
+
+    for(var i=1;i<=10;i++)
+    {
+        document.write("<div>")
+            
+        document.write(i+" x "+no1+" ="+i*no1)
+        document.write("</div>")
+
+    }
+</script>
+</html>
