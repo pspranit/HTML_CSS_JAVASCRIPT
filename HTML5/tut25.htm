@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flexbox</title>
+    <style>
+      body {
+        font-family: 'Ubuntu Mono', monospace;
+        background-color: rgb(24, 97, 113);
+        height: 1000px;
+      }
+      body:hover{
+        background-color: black;
+      }
+      .container {
+        border-radius: 40px;
+        /* border: 3px solid red; */
+        height: 500px;
+        width: 100%;
+        /* background-color: grey; */
+        display: flex;
+
+        /* Default flex-direction */
+        flex-direction: row;
+
+        /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+       
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap;  shorthand */
+
+        /* horizontal direction */
+        justify-content: center;
+        /* justify-content: space-between;
+   justify-content: space-evenly;
+   justify-content: space-around; */
+
+        /* vertical direction */
+        align-items: center;
+        /* align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch; */
+      }
+      .item {
+        border-radius: 20px;
+        width: 150px;
+        height: 150px;
+        /* border: 2px solid red; */
+        background-color: white;
+        margin: 10px;
+        padding: 3px;
+      }
+      #item-1{
+        /* order: 3; */
+        /* flex-grow: 2;
+        flex-shrink: 2; */
+      }
+      #item-2{
+        /* order: 4; */
+        /* flex-grow: 3;
+        flex-shrink: 3; */
+
+        /* control the width */
+        /* flex-basis: 300px; depend on row columns */
+       
+      }
+      #item-3{
+        /* Higher priority  */
+        /* order: 40; */
+        /* align-self:center; */
+        align-self: flex-start;
+        /* align-self: flex-end; */
+
+      }
+    
+     
+      .item:hover {
+        color: white;
+        background-color: blueviolet;
+      }
+      .container h3 {
+        font-size: 1.5rem;
+        /* margin: 40px 30px; */
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        padding-left: 20px;
+        /* margin-right: 20px; */
+        color: yellow;
+        /* margin-bottom: 30px; */
+        margin: 48px 25px 10px 24px;
+      }
+      .ps {
+        margin-top: 10px;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        margin-bottom: 30px;
+       
+      }
+      h1 {
+        color: red;
+        border-radius: 10px;
+      }
+      h1:hover {
+        background-color: black;
+      }
+      .ps:hover{
+        background-color: yellow;
+      }
+      .container:hover{
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ps">
+      <h1>FlexBox</h1>
+    </div>
+
+    <div class="container">
+      <div class="item" id="item-1"><h3>First Box</h3></div>
+      <div class="item" id="item-2"><h3>Second Box</h3></div>
+      <div class="item" id="item-3"><h3>Third Box</h3></div>
+      <div class="item" id="item-4"><h3 >fourth Box</h3></div>
+      <div class="item" id="item-5"><h3>Fifth Box</h3></div>
+      <div class="item" id="item-6"><h3>six Box</h3></div>
+    </div>
+  </body>
+</html>

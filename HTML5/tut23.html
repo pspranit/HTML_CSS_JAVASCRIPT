@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        border: 4px solid red;
+        background-color: grey;
+        margin: 10px;
+        height: 4000px;
+      }
+      .box {
+        border: 2px solid yellow;
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+        display: inline-block;
+        font-weight: bold;
+        color: black;
+      }
+      #box3 {
+        font-weight: bold;
+        position: absolute;
+        top: 34px;
+        left: 134px;
+      }
+      #box4 {
+        font-weight: bold;
+        position: relative;
+        top: 34px;
+        left: 134px;
+      }
+      #box2 {
+        position: fixed;
+        right: 54px;
+        width: 141px;
+        height: 150px;
+      }
+      #box1 {
+        position: sticky;
+        left:810px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">sticky</div>
+      <div class="box" id="box2">fixed</div>
+      <div class="box" id="box3">absolute</div>
+      <div class="box" id="box4">relative</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keyframes animation</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: gray;
+        justify-content: center;
+    }
+    .box {
+        background-color: purple;
+        height: 250px;
+        width: 250px;
+        margin-right: 200px;
+        position: relative;
+        /* animation-name: pranit; */
+        animation-name: ps;
+
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: alternate; */
+
+        /* animation-timing-function: ease-in;*/
+        /* animation-timing-function: ease-out;  */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+
+        /* animation-direction: alternate;
+        animation-direction: alternate-reverse; */
+        /* animation-direction: reverse; */
+      }
+      @keyframes ps {
+        0% {
+          top: 0px;
+          left: 0px;
+          border-radius: 25px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+          background-color: blue;
+          border-radius: 50px;
+        }
+        75% {
+            top: 250px;
+            left: 250px;
+            border-radius: 75px;
+            background-color: red;
+        }
+        100% {
+          top: 0px;
+          left: 250px;
+          border-radius: 100px;
+          background-color: yellow;
+        }
+      }
+      @keyframes pranit {
+        form {
+          width: 200px;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

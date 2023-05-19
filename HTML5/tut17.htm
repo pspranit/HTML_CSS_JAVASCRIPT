@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height,width,border and backgrounds</title>
+    <style>
+      h3 {
+        border: 3px solid red;
+        width: 250px;
+        background-color: yellow;
+        color: black;
+      }
+      #ps {
+        background-color: rebeccapurple;
+        height: 100px;
+        width: 455px;
+        /* border-width: 4px;
+            border-color: red;
+            border-style:solid; */
+        border: 4px solid red;
+
+        border-radius: 11px;
+        text-align: center;
+        line-height: 6em;
+      }
+      #ps1 {
+        background-color: black;
+        height: 100px;
+        width: 455px;
+        color: white;
+        border-top: 5px solid red;
+        border-bottom: 5px solid blue;
+        border-left: 5px solid yellow;
+        border-right: 5px solid green;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 6;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 60px;
+        border-top-right-radius: 60px;
+      }
+
+      .bor {
+        background-color: red;
+        height: 400px;
+        width: 301px;
+        border: 5px solid red;
+        /* border-top-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 60px;
+        border-top-right-radius: 100px; */
+        border-top: 5px solid red;
+        border-bottom: 5px solid blue;
+        border-left: 5px solid yellow;
+        border-right: 5px solid black;
+      }
+
+      img {
+        height: 400px;
+        width: 300px;
+      }
+
+      .para {
+        background-color: black;
+        height: 500px;
+        width: 455px;
+        background-image: url('https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=48&q=75');
+        border: 4px solid red;
+        background-repeat: no-repeat;
+        background-position: 20px top;
+        background-position: bottom left;
+        background-position: bottom right;
+        background-position: center center;
+      }
+    div{
+        width: 50%;
+      
+        
+    }
+      #paraDiv {
+        background-color: red;
+      }
+      #paraDiv2 {
+        background-color: green;
+      }
+      #paraDiv3{
+        background-color: #B6323E;
+      }
+      #paraDiv4 {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <center>
+      <div id="paraDiv">
+        <h3>This is Heading</h3>
+        <p id="ps">This is Paragraph</p>
+      </div>
+
+      <div id="paraDiv2">
+        <h3>This is my Second Heading</h3>
+        <p id="ps1">This is my Second Paragraph</p>
+      </div>
+
+      <div id="paraDiv3">
+        <p class="bor">
+          <img
+            src="https://th.bing.com/th/id/OIP._Z9LKSAfVXAbB4RRzOEIIwHaJm?pid=ImgDet&rs=1"
+            alt="Rahul"
+          />
+        </p>
+      </div>
+      
+      <div id="paraDiv4">
+        <p class="para"></p>
+    </div>
+    </center>
+  </body>
+</html>

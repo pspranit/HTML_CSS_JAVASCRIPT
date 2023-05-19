@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo selectors & more Designing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *
+        {
+            font-family: 'Ubuntu Mono', monospace;
+        }
+      .container {
+        
+        border: 2px solid red;
+        background-color: rgb(168, 226, 226);
+        padding: 34px;
+        margin: 34px auto;
+        width: 666px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .btn:hover {
+        color: white;
+        background-color: black;
+        border: 5px solid red;
+        
+      }
+      .btn:visited {
+        background-color: blue;
+      }
+      .btn:active {
+        background-color: white;
+      }
+      .btn {
+       font-weight: bold;
+        background-color: rgb(226, 242, 12);
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont1">
+      <h3>This is my Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam et
+        perspiciatis molestiae, dolorum, nesciunt amet odio voluptatibus rem,
+        doloremque nihil impedit labore? Nisi amet, dolor adipisci
+        necessitatibus soluta corporis placeat nesciunt dolorum vitae mollitia.
+        Temporibus.
+      </p>
+      <a href="https://www.google.com/" target="_blank" class="btn"
+        >read more</a
+      >
+      <button class="btn">contact us</button>
+    </div>
+  </body>
+</html>

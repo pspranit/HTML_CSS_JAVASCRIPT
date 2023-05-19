@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        p{
+            color: red;
+            background-color: black;
+        }
+
+        /* # id selector */
+        #ps1{
+            color: white;
+            background-color: red;
+        }
+
+        /* . class selector */
+        .ps3{
+            color: purple;
+            background-color: aqua;
+        }
+       
+        div{
+            color: black;
+            background-color: green;
+        }
+        
+        /* , groupping selector */
+       
+        #ps1,.ps3,p,div.ps4{
+            color: brown;
+            background-color: yellow;
+            border: 2px solid red;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eligendi?
+    </p>
+
+    <p id="ps1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+      aspernatur!
+      <span>pranit sahane</span>
+    </p>
+
+    <p class="ps2 ps3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+      aspernatur!
+    </p>
+
+    <div>
+      <p class="ps4">ipsum dolor sit amet consectetur adipisicing elit. Possimus, quia.</p> 
+    </div>
+  </body>
+</html>
